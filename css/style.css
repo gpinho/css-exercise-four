@@ -1,4 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+  /* display: block; */
+}
+
+h1 {
+  font-size: 16px;
+}
+
+/* h1:first-of-type {
+  text-align: center;
+  font-size: 32px;
+} */
+
+.container {
+  margin: 20px auto;
+  width: 90%;
+}
+
+.preview.baku {
+  background-image: url("../images/baku.jpg")
+}
+
+.preview.london {
+  background-image: url("../images/london.png")
+}
+
+.preview.madrid {
+  background-image: url("../images/madrid.jpg")
+}
+
+.preview.rome {
+  background-image: url("../images/rome.jpg")
+}
+
+div {
+  background-size: cover;
+  float: left;
+  margin: 1% 0;
+  width: 100%;
+  padding: 20px 25px 200px 25px;
+}
+
+@media screen and (min-width: 575px){
+   div {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 991px){
+   div {
+    margin: 1%;
+    width: 23%;
+  }
 }
